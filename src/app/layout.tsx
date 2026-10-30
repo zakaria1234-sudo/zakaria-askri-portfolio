@@ -38,6 +38,9 @@ export const metadata: Metadata = {
   robots: site.allowIndex
     ? { index: true, follow: true }
     : { index: false, follow: false },
+  ...(process.env.GOOGLE_SITE_VERIFICATION
+    ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
+    : {}),
   openGraph: {
     type: "website",
     locale: "fr_FR",

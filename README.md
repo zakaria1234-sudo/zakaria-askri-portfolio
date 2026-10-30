@@ -79,15 +79,20 @@ En production Vercel, le site est indexable (`index, follow`, `robots.txt` ouver
 
 ## Qualité mesurée
 
-Lighthouse mobile, build de production, 30/10/2026 :
+Site en production : **https://zakariaaskri.vercel.app**
+
+Lighthouse mobile sur l'URL publique, 30/10/2026 :
 
 | Catégorie | Score |
 | --- | --- |
-| Performance | 95 |
+| Performance | 94 |
 | Accessibilité | 100 |
 | Best practices | 100 |
+| SEO | 100 |
 
 LCP ≈ 1,0 s · CLS = 0 · 0 erreur console.
+
+Pour Search Console, définir `GOOGLE_SITE_VERIFICATION` avec le jeton fourni par Google, puis redéployer.
 
 Variables d'environnement :
 
