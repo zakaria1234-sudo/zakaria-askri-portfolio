@@ -69,13 +69,13 @@ Vercel Hobby, déploiement automatique depuis `main`.
 
 1. Importer le dépôt GitHub dans Vercel (*Add New Project*).
 2. Framework : Next.js (détection automatique). Node : 24 (`.nvmrc`).
-3. Variables d'environnement :
-   - `NEXT_PUBLIC_SITE_URL` = URL de production, sans slash final
-   - `NEXT_PUBLIC_ALLOW_INDEX` = `true` uniquement après validation du contenu
+3. Aucune variable n'est obligatoire : l'URL de production et l'indexation sont détectées automatiquement.
+   - `NEXT_PUBLIC_SITE_URL` permet de surcharger l'URL canonique (utile pour un domaine personnalisé).
+   - `NEXT_PUBLIC_ALLOW_INDEX=false` désactive l'indexation même en production.
 4. Déployer, puis vérifier `/`, `/projects`, `/projects/his-ai-workflow`, `/sitemap.xml`, `/robots.txt`.
 5. Chaque push sur `main` redéploie automatiquement.
 
-Tant que `NEXT_PUBLIC_ALLOW_INDEX` vaut `false`, le site est en `noindex` et `robots.txt` bloque l'exploration.
+En production Vercel, le site est indexable (`index, follow`, `robots.txt` ouvert). En preview et en local, il reste en `noindex`.
 
 ## Qualité mesurée
 
