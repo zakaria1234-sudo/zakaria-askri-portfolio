@@ -15,6 +15,7 @@ export const profile = {
   availability: "PFE dès février 2027 · stage, alternance, junior, freelance",
   availabilityShort: "Disponible pour un PFE dès février 2027",
   email: "zakaria.askri1@gmail.com",
-  cvPath: null,
+  
+  cvPath: "/cv/zakaria-askri-cv-fr.pdf",
   reviewed: true,
 } satisfies Profile;
