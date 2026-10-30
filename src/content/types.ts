@@ -37,6 +37,8 @@ export interface Profile {
   summary: string[];
   location: string | null;
   availability: string | null;
+  /** Version courte pour le hero. */
+  availabilityShort: string | null;
   email: string | null;
   cvPath: string | null;
   /** Passe à true après relecture factuelle complète. */

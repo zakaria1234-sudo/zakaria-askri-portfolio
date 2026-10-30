@@ -6,11 +6,12 @@ import type { Discipline } from "./types";
  */
 export const discipline = {
   intro:
-    "Le sport fait partie de mon quotidien depuis 2015. La pratique régulière et l'encadrement m'ont appris la constance, la préparation et la progression par étapes — des principes que je retrouve dans le développement logiciel.",
+    "Le sport fait partie de mon quotidien depuis 2015. La pratique régulière, l'encadrement et la préparation d'objectifs m'ont appris la constance et la progression par étapes — des principes que je retrouve dans le développement logiciel.",
   facts: [
     { label: "Taekwondo", value: "Pratique depuis 2015" },
     { label: "Grade", value: "1er Dan" },
+    { label: "Encadrement", value: "Expérience de coaching" },
     { label: "Course", value: "Marathon de Tunis 2025" },
   ],
-  draft: true,
+  draft: false,
 } satisfies Discipline;

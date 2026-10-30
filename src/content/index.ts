@@ -1,6 +1,7 @@
 import { discipline } from "./discipline";
 import { education } from "./education";
 import { experiences } from "./experiences";
+import { languages } from "./languages";
 import { profile } from "./profile";
 import { projects } from "./projects";
 import { site, navItems, type NavItem } from "./site";
@@ -8,7 +9,16 @@ import { skillGroups } from "./skills";
 import { socials } from "./socials";
 import type { Project } from "./types";
 
-export { discipline, education, experiences, profile, site, skillGroups, socials };
+export {
+  discipline,
+  education,
+  experiences,
+  languages,
+  profile,
+  site,
+  skillGroups,
+  socials,
+};
 export { projects };
 
 /** Projets publiés uniquement : un brouillon n'est jamais rendu ni indexé. */

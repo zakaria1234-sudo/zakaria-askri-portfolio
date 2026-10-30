@@ -11,7 +11,6 @@ export const socials: SocialLink[] = [
     id: "linkedin",
     label: "LinkedIn",
     handle: "Zakaria Askri",
-    // À FOURNIR : URL complète du profil.
-    href: null,
+    href: "https://www.linkedin.com/in/zakaria-askri-86262b2a9/",
   },
 ];

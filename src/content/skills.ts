@@ -1,22 +1,18 @@
 import type { SkillGroup } from "./types";
 
-/**
- * Les niveaux sont volontairement omis : ils doivent être validés un par un.
- * L'interface n'affiche un badge que lorsque `level` est renseigné.
- */
 export const skillGroups: SkillGroup[] = [
   {
     id: "frontend",
-    label: "Frontend",
-    description: "Interfaces web, composants et rendu côté serveur.",
+    label: "Développement web",
+    description: "Interfaces, composants et rendu côté serveur.",
     items: [
-      { name: "JavaScript" },
-      { name: "TypeScript" },
-      { name: "React" },
-      { name: "Next.js" },
-      { name: "HTML" },
-      { name: "CSS" },
-      { name: "Tailwind CSS" },
+      { name: "JavaScript", level: "solide" },
+      { name: "TypeScript", level: "progression" },
+      { name: "React", level: "solide" },
+      { name: "Next.js", level: "progression" },
+      { name: "HTML", level: "solide" },
+      { name: "CSS", level: "solide" },
+      { name: "Tailwind CSS", level: "solide" },
     ],
   },
   {
@@ -24,33 +20,31 @@ export const skillGroups: SkillGroup[] = [
     label: "Backend & données",
     description: "APIs, logique métier et persistance.",
     items: [
-      { name: "Node.js" },
-      { name: "Nest.js" },
-      { name: "APIs REST" },
-      { name: "SQL" },
+      { name: "Node.js", level: "solide" },
+      { name: "Nest.js", level: "progression" },
+      { name: "REST API", level: "solide" },
+      { name: "SQL", level: "solide" },
     ],
   },
   {
     id: "qualite",
-    label: "Qualité & outils",
+    label: "Automatisation & qualité",
     description: "Tests, automatisation et travail collaboratif.",
     items: [
-      { name: "Playwright" },
-      { name: "Tests E2E" },
-      { name: "Validation d'état" },
-      { name: "Git" },
-      { name: "GitHub" },
+      { name: "Playwright", level: "solide" },
+      { name: "Tests et automatisation", level: "solide" },
+      { name: "Git / GitHub", level: "solide" },
     ],
   },
   {
-    id: "domaine",
-    label: "Domaine métier",
-    description: "Systèmes d'information et automatisation des processus.",
+    id: "metier",
+    label: "Systèmes métier",
+    description: "Processus, systèmes d'information et santé.",
     items: [
-      { name: "ERP" },
-      { name: "HIS / SIH" },
-      { name: "Workflows métier" },
-      { name: "e-santé" },
+      { name: "ERP", level: "progression" },
+      { name: "HIS / SIH", level: "solide" },
+      { name: "Workflows métier", level: "solide" },
+      { name: "Automatisation de processus métier", level: "solide" },
     ],
   },
 ];

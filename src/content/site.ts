@@ -4,8 +4,9 @@ export const site = {
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "") ??
     "https://zakaria-askri.vercel.app",
   description:
-    "Portfolio de Zakaria Askri, développeur Full-Stack JavaScript. Applications web React et Next.js, APIs Node.js, automatisation de workflows métier ERP/HIS et qualité logicielle.",
+    "Portfolio de Zakaria Askri, développeur Full-Stack JavaScript à Tunis. Applications React et Next.js, APIs Node.js, automatisation de workflows ERP/HIS et qualité logicielle. PFE dès février 2027.",
   lastUpdated: "octobre 2026",
+  contentUpdated: "2026-10-30",
   allowIndex: process.env.NEXT_PUBLIC_ALLOW_INDEX === "true",
 } as const;
 

@@ -1,47 +1,35 @@
 import type { Experience } from "./types";
 
-/**
- * Contenus en brouillon : non affichés tant que `draft` reste à true.
- * Les périodes et le périmètre exact restent à confirmer.
- */
 export const experiences: Experience[] = [
   {
     id: "his-ai-workflow",
     role: "Conception et développement",
-    organization: "HIS AI Workflow — projet personnel",
-    period: null,
-    location: null,
+    organization: "HIS AI Workflow — projet professionnel",
+    period: "Juillet 2026 — aujourd'hui",
+    location: "Tunis",
     type: "projet",
     summary:
-      "Plateforme d'analyse, de construction et de simulation de workflows métier pour un système d'information de santé.",
-    highlights: [],
-    stack: ["JavaScript", "Node.js", "Playwright"],
-    draft: true,
+      "Plateforme d'automatisation intelligente qui analyse, représente et simule des workflows métier dans un environnement HIS/ERP, avec exécution automatisée via Playwright.",
+    highlights: [
+      "Résolution sémantique des éléments d'interface et distinction entre DOM visible et éléments cachés",
+      "Drivers d'interaction dédiés aux composants métier, dont Select2",
+      "Construction, validation et fusion de workflows, puis génération d'un plan d'exécution",
+      "Validation d'état après action et récupération en cas d'échec",
+    ],
+    stack: ["JavaScript", "Node.js", "Playwright", "ERP / HIS"],
+    draft: false,
   },
   {
     id: "freelance",
     role: "Développeur freelance",
     organization: "Indépendant",
     period: "2024 — 2025",
-    location: null,
+    location: "Tunis",
     type: "freelance",
     summary:
-      "Missions de développement web pour des clients. Périmètre et technologies à préciser.",
+      "Missions de développement web menées en freelance entre 2024 et 2025.",
     highlights: [],
     stack: [],
-    draft: true,
-  },
-  {
-    id: "ecommerce-2023",
-    role: "Développeur",
-    organization: "Projet e-commerce",
-    period: "2023",
-    location: null,
-    type: "projet",
-    summary:
-      "Réalisation d'un projet e-commerce dans le cadre de mon parcours en informatique.",
-    highlights: [],
-    stack: [],
-    draft: true,
+    draft: false,
   },
 ];
