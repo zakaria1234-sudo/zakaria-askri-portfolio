@@ -4,6 +4,11 @@ import { profile, site } from "@/content";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { SkipLink } from "@/components/layout/skip-link";
+import {
+  getPersonJsonLd,
+  getWebsiteJsonLd,
+  serializeJsonLd,
+} from "@/lib/jsonld";
 import "./globals.css";
 
 const inter = Inter({
@@ -54,6 +59,18 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="flex min-h-dvh flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: serializeJsonLd(getPersonJsonLd()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: serializeJsonLd(getWebsiteJsonLd()),
+          }}
+        />
         <SkipLink />
         <Header />
         <main id="main" className="flex-1">
