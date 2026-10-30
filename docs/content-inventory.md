@@ -2,95 +2,105 @@
 
 Dernière mise à jour : 2026-10-30
 
-Légende : ✅ confirmé · 🟡 à valider · ❌ manquant (bloquant pour la publication)
+Légende : ✅ confirmé · 🟡 partiel · ❌ manquant (bloquant pour la publication complète)
 
-## 1. Profil
+## 1. Profil — ✅ complet
 
-| Champ | Valeur | Statut |
-| --- | --- | --- |
-| Nom | Zakaria Askri | ✅ |
-| Titre | Développeur Full-Stack JavaScript | ✅ |
-| Accroche | Fournie dans `src/content/profile.ts`, à valider | 🟡 |
-| Email public | — | ❌ |
-| LinkedIn | — | ❌ |
-| GitHub | `https://github.com/zakaria1234-sudo` | 🟡 à confirmer |
-| Localisation | — | ❌ |
-| Disponibilité | — | ❌ |
-| CV PDF | — | ❌ |
-| Photo | Aucune (D-11) | ✅ |
-
-## 2. Formation
-
-| Élément | Valeur | Statut |
-| --- | --- | --- |
-| Licence Informatique et Multimédia | Université Sesame, Technopark El Ghazala, 2025–2027 | ✅ |
-| Diplôme antérieur / bac | — | ❌ |
-
-## 3. Expériences
-
-| Élément | Statut |
+| Champ | Valeur |
 | --- | --- |
-| Freelance 2024–2025 : missions, technos, durée, clients anonymisables | ❌ |
-| Projet e-commerce 2023 : contexte, stack, rôle, fonctionnalités, code/démo | ❌ |
-| HIS AI Workflow : période, statut, propriété du code | ❌ |
+| Nom | Zakaria Askri |
+| Titre | Développeur Full-Stack JavaScript |
+| Localisation | Tunis — Grand Tunis |
+| Télétravail | Oui |
+| Disponibilité | PFE dès février 2027 · stage, alternance, junior, freelance |
+| Email | `zakaria.askri1@gmail.com` |
+| LinkedIn | `https://www.linkedin.com/in/zakaria-askri-86262b2a9/` |
+| GitHub | `https://github.com/zakaria1234-sudo` |
+| Téléphone | Non affiché (décision) |
+| Photo | Aucune (D-11) |
 
-## 4. Compétences
+## 2. CV — ❌ manquant
 
-Niveaux volontairement **non renseignés** tant qu'ils ne sont pas validés un par un.
-L'interface n'affiche un badge de niveau que si la donnée existe.
+Le bouton CV reste masqué tant que `profile.cvPath` est `null`.
 
-| Groupe | Items proposés | Statut |
-| --- | --- | --- |
-| Frontend | JavaScript, TypeScript, React, Next.js, HTML, CSS, Tailwind CSS | 🟡 |
-| Backend | Node.js, Nest.js, APIs REST, SQL | 🟡 |
-| Qualité & outils | Playwright, tests E2E, validation d'état, Git, GitHub | 🟡 |
-| Domaine | ERP, HIS / SIH, workflows métier, e-santé | 🟡 |
+À fournir : PDF une page, en français, nommé `zakaria-askri-cv-fr.pdf`, déposé dans `public/cv/`, puis renseigner `cvPath` dans `src/content/profile.ts`.
 
-## 5. Langues
+## 3. Formation — ✅
 
-| Langue | Niveau CECRL | Statut |
-| --- | --- | --- |
-| Arabe | — | ❌ |
-| Français | — | ❌ |
-| Anglais | — | ❌ |
-| Allemand | — | ❌ |
+| Élément | Valeur |
+| --- | --- |
+| Licence Informatique et Multimédia | Université Sesame, Technopark El Ghazala, 2025–2027 |
 
-## 6. Discipline & sport
+Diplôme antérieur : non requis pour la V1.
 
-| Élément | Valeur | Statut |
-| --- | --- | --- |
-| Taekwondo | Depuis 2015 | ✅ |
-| Grade | 1er Dan (année à préciser) | 🟡 |
-| Encadrement sportif | Structure, durée, public à préciser | ❌ |
-| Marathon de Tunis | 2025 | ✅ |
-| Temps marathon | Facultatif | ❌ |
+## 4. Compétences — ✅ niveaux validés
 
-## 7. Projets
+| Groupe | Items |
+| --- | --- |
+| Développement web | JavaScript (solide), TypeScript (progression), React (solide), Next.js (progression), HTML (solide), CSS (solide), Tailwind CSS (solide) |
+| Backend & données | Node.js (solide), Nest.js (progression), REST API (solide), SQL (solide) |
+| Automatisation & qualité | Playwright (solide), Tests et automatisation (solide), Git / GitHub (solide) |
+| Systèmes métier | ERP (progression), HIS / SIH (solide), Workflows métier (solide), Automatisation de processus métier (solide) |
 
-### HIS AI Workflow
-- Statut : `draft` dans le contenu, confidentialité `concept-only`.
-- Architecture fournie : agents (navigation, observation, exploration, workflow, simulation, chatbot), interpreters (UIElement, ScreenSemantic, Entity, Action, Transition), workflow (DiscoveryEngine, Builder, Validator, Merger, ExecutionPlanBuilder), simulation (SimulationAgent, ActionExecutor, ElementResolver, StateValidator, RecoveryManager).
-- À fournir : propriété du code, période, difficultés réelles rencontrées, solutions apportées, résultats qualitatifs, autorisation de publier le schéma.
+## 5. Langues — 🟡
 
-### E-commerce 2023
-- À fournir : contexte, stack, rôle, fonctionnalités, captures, dépôt ou démonstration.
+Arabe, français, anglais, allemand. Les niveaux CECRL ne sont pas affichés tant qu'ils ne sont pas validés.
 
-## 8. Checklist de publication d'une capture d'écran (HIS)
+## 6. HIS AI Workflow — ✅ publiable
 
-Une capture ne peut être publiée que si **les six** points sont validés :
+| Élément | Valeur |
+| --- | --- |
+| Type | Projet professionnel |
+| Période | Juillet 2026 — aujourd'hui |
+| Rôle | Conception et développement |
+| Propriété du code | Code développé par Zakaria Askri |
+| Publication | Conceptuelle, code privé, aucune donnée HIS |
+| Architecture | Agents, interpreters, workflow, simulation |
+| Difficultés | Résolution d'éléments, DOM visible/caché, Select2, identifiants sémantiques, validation de workflow, plans d'exécution, validation d'état, récupération, navigation HIS, Playwright |
+| Drivers | NativeSelectDriver, Select2Driver, InputDriver, ButtonDriver |
+| Captures | Aucune publiée pour l'instant |
 
-1. Aucune donnée patient (nom, identifiant, date, dossier).
-2. Aucun credential, token ou mot de passe visible.
-3. Aucun hostname, nom de serveur ou adresse IP interne.
-4. Aucun nom de client, d'établissement ou d'organisation sous NDA.
-5. Autorisation de diffusion obtenue (projet personnel, académique ou accord explicite).
-6. Métadonnées EXIF supprimées et image convertie en WebP.
+## 7. E-commerce 2023 — 🟡 partiel
 
-À défaut, utiliser un schéma redessiné.
+| Élément | Valeur |
+| --- | --- |
+| Année | 2023 |
+| Type | Projet académique et personnel |
+| Technologies | JavaScript frontend + backend |
+| Fonctionnalités détaillées | ❌ à fournir |
+| Rôle précis | 🟡 « Projet académique et personnel » |
+| Dépôt / démonstration | ❌ aucun lien disponible |
 
-## 9. Règles de contenu
+La fiche est publiable en l'état, avec une mention explicite des éléments à venir.
 
-- Aucun chiffre, aucun résultat, aucun nom de client inventé.
-- Aucun superlatif non prouvé (« expert », « passionné », « meilleur »).
-- Chaque compétence doit pouvoir être reliée à un projet ou une expérience.
-- Le sport reste une section secondaire, factuelle, sans emphase.
+## 8. Freelance 2024–2025 — 🟡 partiel
+
+Période et statut confirmés. Le détail des missions (contexte, problème, solution, technologies, résultat) reste à fournir. Aucun client n'est nommé.
+
+## 9. Sport — ✅
+
+Taekwondo depuis 2015, 1er Dan, expérience d'encadrement/coaching, Marathon de Tunis 2025.
+Année du 1er Dan et temps du marathon non affichés.
+
+## 10. Checklist de publication d'une capture HIS
+
+1. Aucune donnée patient.
+2. Aucun credential, token ou mot de passe.
+3. Aucun hostname, serveur ou IP interne.
+4. Aucun nom de client ou d'établissement sous NDA.
+5. Autorisation de diffusion obtenue.
+6. EXIF supprimés, image convertie en WebP.
+
+## 11. Reste à fournir avant une V1 « complète »
+
+1. CV PDF français.
+2. Détail des missions freelance (facultatif mais recommandé).
+3. Fonctionnalités et éventuel dépôt du projet e-commerce.
+4. Captures HIS anonymisées (facultatif).
+5. Niveaux CECRL des langues (facultatif).
+
+## 12. Règles de contenu
+
+- Aucun chiffre, résultat ou client inventé.
+- Aucun superlatif non prouvé.
+- Le sport reste secondaire et factuel.
