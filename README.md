@@ -67,6 +67,28 @@ en `draft`, il n'est ni listé, ni généré, ni indexé.
 
 Vercel Hobby, déploiement automatique depuis `main`.
 
+1. Importer le dépôt GitHub dans Vercel (*Add New Project*).
+2. Framework : Next.js (détection automatique). Node : 24 (`.nvmrc`).
+3. Variables d'environnement :
+   - `NEXT_PUBLIC_SITE_URL` = URL de production, sans slash final
+   - `NEXT_PUBLIC_ALLOW_INDEX` = `true` uniquement après validation du contenu
+4. Déployer, puis vérifier `/`, `/projects`, `/projects/his-ai-workflow`, `/sitemap.xml`, `/robots.txt`.
+5. Chaque push sur `main` redéploie automatiquement.
+
+Tant que `NEXT_PUBLIC_ALLOW_INDEX` vaut `false`, le site est en `noindex` et `robots.txt` bloque l'exploration.
+
+## Qualité mesurée
+
+Lighthouse mobile, build de production, 30/10/2026 :
+
+| Catégorie | Score |
+| --- | --- |
+| Performance | 95 |
+| Accessibilité | 100 |
+| Best practices | 100 |
+
+LCP ≈ 1,0 s · CLS = 0 · 0 erreur console.
+
 Variables d'environnement :
 
 | Variable | Rôle |
